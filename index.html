@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery-satish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Fullimage-box" id="image-box">
+        <img id="fullimage" src="img/photo (1).jpg">
+        <span onclick="closefullimage()">&#10006</span>
+    </div>
+    <div class="image-container">
+        <img src="img/photo (1).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (2).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (3).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (4).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (5).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (6).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (7).jpg" onclick="openimage(this.src)">
+        <img src="img/photo (8).jpg" onclick="openimage(this.src)">
+    </div>
+    <script>
+        let image_box =document.getElementById('image-box'); 
+        let image =document.getElementById('fullimage');
+
+           const openimage=(pic)=>{
+            image_box.style.display="flex";
+            image.src=pic;
+           }
+           function closefullimage(){
+            image_box.style.display="none";
+
+           }
+         
+
+    </script>
+</body>
+</html>
